@@ -1,0 +1,155 @@
+{
+  "contractName": "ILendingPoolAddressesProvider",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLendingPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLendingPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Aave*\",\"details\":\"Main registry of addresses part of or connected to the protocol, including permissioned roles - Acting also as factory of proxies and admin of those, so with right to change its implementations - Owned by the Aave Governance\",\"kind\":\"dev\",\"methods\":{},\"title\":\"LendingPoolAddressesProvider contract\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/ILendingPoolAddressesProvider.sol\":\"ILendingPoolAddressesProvider\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/ILendingPoolAddressesProvider.sol\":{\"keccak256\":\"0x28d54d5fc7781c2a4d089de75032da502f0ff1acb8836912c6b4088b74c12bee\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://5ff6c1576329248ab781d099c7b8ca82e9a913f5cc854526d397710ed1cb61f3\",\"dweb:/ipfs/QmS7DVjqHgVdaoY68v3TLzviLNnhaE7w814Amo6o2LZE9Y\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: agpl-3.0\npragma solidity ^0.8.4;\n\n/**\n * @title LendingPoolAddressesProvider contract\n * @dev Main registry of addresses part of or connected to the protocol, including permissioned roles\n * - Acting also as factory of proxies and admin of those, so with right to change its implementations\n * - Owned by the Aave Governance\n * @author Aave\n **/\ninterface ILendingPoolAddressesProvider {\n  function getLendingPool() external view returns (address);\n}",
+  "sourcePath": "C:\\Users\\DanielBrown\\Desktop\\Web3\\aave_defi-main\\src\\contracts\\ILendingPoolAddressesProvider.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/ILendingPoolAddressesProvider.sol",
+    "exportedSymbols": {
+      "ILendingPoolAddressesProvider": [
+        382
+      ]
+    },
+    "id": 383,
+    "license": "agpl-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 375,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:23:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ILendingPoolAddressesProvider",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 376,
+          "nodeType": "StructuredDocumentation",
+          "src": "62:311:3",
+          "text": " @title LendingPoolAddressesProvider contract\n @dev Main registry of addresses part of or connected to the protocol, including permissioned roles\n - Acting also as factory of proxies and admin of those, so with right to change its implementations\n - Owned by the Aave Governance\n @author Aave*"
+        },
+        "fullyImplemented": false,
+        "id": 382,
+        "linearizedBaseContracts": [
+          382
+        ],
+        "name": "ILendingPoolAddressesProvider",
+        "nameLocation": "384:29:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "0261bf8b",
+            "id": 381,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLendingPool",
+            "nameLocation": "427:14:3",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 377,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "441:2:3"
+            },
+            "returnParameters": {
+              "id": 380,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 379,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 381,
+                  "src": "467:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 378,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "467:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "466:9:3"
+            },
+            "scope": 382,
+            "src": "418:58:3",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 383,
+        "src": "374:104:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "37:441:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-24T22:51:40.210Z",
+  "devdoc": {
+    "author": "Aave*",
+    "details": "Main registry of addresses part of or connected to the protocol, including permissioned roles - Acting also as factory of proxies and admin of those, so with right to change its implementations - Owned by the Aave Governance",
+    "kind": "dev",
+    "methods": {},
+    "title": "LendingPoolAddressesProvider contract",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
